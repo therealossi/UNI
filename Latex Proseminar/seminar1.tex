@@ -1,0 +1,173 @@
+
+% =============== Seminar 1 =============== %
+
+\section{Seminar 1 - Werkzeuge der Softwareentwicklung}
+
+%Notizen 
+% Visual Paradigm
+%use case diagram wichtig für Seminar 2
+
+\subsection{Aufgabe 1 - Werkzeugkategorien}
+
+\begin{itemize}
+	\item Texteditoren und integrierte Entwicklungsumgebungen (IDEs)
+	\begin{itemize}
+		\item Zweck: Quellcode/Programmcode schreiben, entwickeln und debuggen
+		\item Beispiele: IntelliJ IDEA, Visual Studio 2022, Visual Studio Code, Atom
+	\end{itemize}
+	\item Versionskontrollsysteme
+	\begin{itemize}
+		\item Zweck: Verschiedene Versionen von Quellcode und Software verwalten, zusammenführen und dokumentieren
+		\item Beispiele: Git, Apache Subversion (SVN)
+	\end{itemize}
+	\item Aufgabenmanagementsysteme
+	\begin{itemize}
+		\item Zweck: Kapazitäten (zeitliche, finanzielle etc.) für einzelne Aufgaben der Softwareentwicklung managen
+		\item Beispiele: Trello
+	\end{itemize}
+	\item Modellierungssysteme
+	\begin{itemize}
+		\item Zweck: Erstellen von Modellen und Diagrammen, um den Entwurf von Software zu planen, die Software zu strukturieren und dokumentieren
+		\item Beispiele: Visual Paradigm, Umlet (beide arbeiten mit der Modellierungssprache UML)
+	\end{itemize}
+	\item Programmiersprachen 
+	\begin{itemize}
+		\item Zweck: Überführung des Softwareentwurfs in von Computern ausführbare Befehle
+		\item Beispiele: Java, C/C++, Python, C\#
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Aufgabe 2 - GitHub}
+\begin{enumerate}[(a)]
+	\item Jedem GitHub-Code-Repository können über das Tool \emph{GitHub Projects} beliebig viele \emph{Projekte} hinzugefügt werden, welche jeweils einzeln geplant, durchgeführt und abgeschlossen werden können. Jedem Projekt werden Teammitglieder hinzugefügt und diesen Personen jeweils Rollen zugeordnet, bspw. \emph{Owner}, \emph{Member} oder \emph{Billing Manager}.
+	
+	Diese Projekte können weiter in einzelne Phasen unterteilt werden. Innerhalb dieser können sogenannte \emph{Issues} und \emph{Pull Requests} angeordnet und erledigt werden.
+	
+	\emph{Issues} sind ein Mittel, welches GitHub bereitstellt, um Ideen, Feedback, Aufgaben oder Bugs in vorhandenem Code zu dokumentieren und zu verwalten. Sie werden projektspezifisch angelegt und können durch entsprechende Änderungen am Projekt, welche z.B. die Idee umsetzen oder den Bug beheben, abgeschlossen werden.
+	
+	\emph{Pull Requests} sind ein von GitHub bereitgestellter Weg, um Änderungen an einem Projekt zu dokumentieren und zu verwalten. Wenn ein Teammitglied eine Version des Projektes (einen \emph{branch}) verändert, so wird dieser in der Regel nicht direkt mit der aktuellen Hauptversion (dem \emph{base branch}) verschmolzen. Zunächst wird ein Pull Request geöffnet, in welchem die vorgenommenen Änderungen beschrieben sind, mit anderen Beteiligten diskutiert werden und weiter angepasst werden können.
+	
+	Im Verlaufe des Projekts wird dessen Fortschritt direkt auf GitHub angezeigt, wodurch es beispielsweise vereinfacht wird, den aktuellen Stand eines Projektes an Vorgesetzte zu kommunizieren. Außerdem können jedem Projekt Meilensteine hinzugefügt werden.
+	
+	Weiterhin ist es möglich, einzelne Aufgaben (\emph{tasks}) anzulegen und sie verschiedenen Teammitgliedern zuzuweisen. Dadurch wird es möglich, große Aufgaben aufzuteilen und den Fortschritt einfacher zu kontrollieren. Bei jeder Änderung eines Tasks werden dessen Historie und Entwicklung automatisch aktualisiert. So können fehlerhafte Änderungen auch leicht rückgängig gemacht werden.
+	
+	Außerdem können an jedem Projekt von jedem Teammitglied Notizen angebracht werden. Diese können z.B. Ideen bezüglich der Entwicklung des Projektes enthalten oder andere Teammitglieder markieren. Darüber hinaus ist es möglich, mittels sogenannter \emph{Reviews} Dateien untereinander zu teilen.
+	
+	Schließlich ist es möglich, jedem Projekt einige Verhaltensregeln (\emph{Code of Conduct}) hinzuzufügen, an die sich jedes Teammitglied halten soll. Auf diese Weise wird die Arbeit an dem Projekt strukturiert und jedes Mitglied des Teams erhält so eine Richtlinie, an die sich gehalten werden kann.
+
+	%Instrumente der Projektplanung (Funktionen und Eigenschaften)
+	%\begin{itemize}
+	%	\item Aufgabenmanagement %Sort tasks
+	%	\begin{itemize}
+	%		\item Aufgaben erstellen bzw. hinzufügen
+	%		\item Aufgaben priorisieren (Notizen hinzufügen)
+	%		\item Aufgaben als erledigt markieren
+	%	\end{itemize}
+	%	\item Projektplanung %Plan your Project
+	%	\begin{itemize}
+	%		\item Status von Aufgaben angeben
+	%		\item Anlegen und Erreichen von Meilensteinen
+	%	\end{itemize}
+	%	\item Arbeitsfluss automatisieren %Automate your workflow
+	%	\begin{itemize}
+	%		\item automatisiere Planung zeitsensitiver Aufgaben
+	%	\end{itemize}
+	%	\item Aktuellen Projektstatus überwachen %track progress
+	%	\begin{itemize}
+	%		\item Überblick des Projekts
+	%	\end{itemize}
+	%	\item Aktuellen Projektstatus teilen %share status
+	%	\begin{itemize}
+	%		\item Aufgaben mit Teammitglieder besprechen über eindeutige URL 
+	%	\end{itemize}
+	%	\item Issue/Bug Tracking %issue tracker??
+	%	\begin{itemize}
+	%	    \item Änderungsvorschläge und Fehler in der Software können zentral als sogenannte \emph{Issues} gesammelt werden
+	%	    \item Issues durch Vornehmen der gewünschten Änderungen bzw. Beheben des Fehlers als abgeschlossen markiert
+	%	\end{itemize}
+	%\end{itemize}
+	
+	\item Welche Personengruppe können am Prozess beteiligt sein? \\
+	Es sind Softwarearchitekten, Ressourcenmanager (Finanzmanager), Projektplaner, Softwareentwickler, Kontrollinstanzen (Tester), Sicherheitsbeauftragter und Analytiker an dem Prozess der Softwareentwicklung mit GitHub beteiligt sein.
+\end{enumerate}
+
+\subsection{Aufgabe 3 - Versionsverwaltung}
+
+\begin{enumerate}[(a)]
+	\item Durch eine Versionsverwaltung ist es möglich, vergangene Versionen eines Projektes wiederherzustellen, falls die aktuelle Version fehlerbehaftet ist. Weiterhin ermöglicht es in großen Projekten, dass einzelne Teammitglieder separat an einem Projekt arbeiten können (in \emph{branches}), ohne sich gegenseitig zu behindern. Anschließend ist es möglich, über die Versionsverwaltung alle gemachten Änderungen zusammenzuführen bzw. zu verschmelzen (\emph{merge}). Weiterhin kann eingesehen werden, welche Person wann welche Datei(en) geändert hat und aus welchen Gründen diese Änderung vorgenommen wurde. Außerdem können darüber Anmerkungen gemacht werden, bspw. von für das Team verantwortliche Personen, um dem Programmierer Feedback zu geben.
+	%Man kann vergangene Versionen notfalls erneut laden (bei Fehlern) und damit weiter arbeiten. In einem Großprojekt können einzelne Leute in verschiedenen Teilen arbeiten und diese erst später zusammenfügen. Man kann sehen wer wann welche Editierungen an welcher Datei vorgenommen hat. Ein Verantwortlicher kann zu einzelnen Teilen Anmerkungen machen und diese wieder zurück an den Programmierer geben.
+	
+	\item 
+	\begin{itemize}
+		\item \emph{Branch}: Ein Nebenstrang des Programms an dem ein Entwickler getrennt von anderen Entwicklern arbeiten kann. Dieser Strang kann später zum Main- bzw. Base-Branch hinzugefügt werden, welcher die Hauptversion des Quelltextes des Programms darstellt.
+		\item \emph{Checkout}: Dieser Git-Befehl ermöglich es, zwischen verschiedenen Branches zu wechseln bzw. neue zu erstellen.
+		%Einen Branch erstellen bzw. in diesen wechseln.
+		\item \emph{Pull-Request} \& \emph{Merge}: Ein \emph{Pull-Request} ist ein Mittel, um die Zusammenführung eines Branches mit dem Base-Branch anzufragen. Die tatsächliche Zusammenführung der Branches wird \emph{Merge} genannt.
+		%Eine Anfrage einen Nebenstrang in den Main-Branch aufnehmen zu lassen und dann der Merge ist die Zusammenführung.
+		\item \emph{Tags}: Ein Verweis auf einen festgelegten Punkt in der Historie eines Git-Projektes. Üblicherweise werden sie genutzt, um Release-Versionen von Software zu markieren. Ein \emph{Tag} kann als ein unveränderlicher \emph{Branch} betrachtet werden.
+		%Zeiger auf eine Veränderung. Tag wird in Git-Datenbank reingelegt.
+	\end{itemize}
+	
+	\item Zunächst muss ein Main-Branch angelegt werden. Für jede geplante Änderung bzw. Erweiterung des vorhandenen Quelltextes sollte dann ein weitere Branch erstellt werden, in dem die Änderungen sicher vorgenommen werden können, ohne die funktionierende Version des Quelltextes im Main-Branch zu verändern. Anschließend kann ein Pull-Request eröffnet werden, wenn alle gewünschten Änderungen bzw. Erweiterungen innerhalb eines Branches vorgenommen wurden. Diese Pull-Requests werden dann von anderen Entwicklern begutachtet, ggf. noch nachgebessert und schließlich durch eienn Merge mit dem Main-Branch zusammengeführt.
+	%Ein Branch in dem die aktuelle und stabile Version liegt, ein Death-Branch in dem frei entwickelt wird. Neue Aufgaben als Teile des Death-Branch's.
+\end{enumerate}
+
+\subsection{Aufgabe 4 - Entwicklungsumgebungen}
+\begin{itemize}
+	\item \emph{Unterstützung von Versionskontrolle}: Viele IDEs unterstützen die automatisierte Ausführung von Git-Kommandos für das bearbeitete Repository, u.a.:
+	\begin{itemize}
+    	\item \emph{commit}: Veränderungen am Quelltext können erst lokal und dann direkt auf dem Versionierungsserver vorgenommen werden.
+    	%Man kann Veränderungen lokal und in den Server direkt vornehmen.
+    	\item \emph{update}: Es ist möglich, alle Meta-Informationen des Projektes (aktuelle Branches, commits etc.) vom Versionierungsserver zu kopieren.
+    	%Den aktuellen Status mit sämtlichen Meta-Informationen (alle aktuellen Branches, commits, etc.) vom Server kopieren.
+    	\item Ausführung von \emph{Pull-Requests}
+    	%Meist muss dieser auch erst angenommen oder abgelehnt werden.
+	\end{itemize}
+	
+	\item automatisches Hinzufügen/Entfernen von Dateien
+	
+	\item meistens: eine Einfärbung des Quelltextes zur besseren Lesbarkeit (\emph{Syntax Highlighting})
+	
+	\item \emph{Code-Vervollständigung}, um Tipparbeit zu verringern; damit inbegriffen: Vorschlagen vergebener Namen (also von bereits deklarierten Variablen, Funktionen etc.)
+	
+	\item einfache automatische \emph{Code-Generierung} (z.B. for-Schleifen)
+	
+	\item Projekte erstellen, kompilieren und ausführen
+	
+	\item \emph{Debugging}, z.B. durch das Hinzufügen von Haltepunkten (\emph{breakpoints}) im Quellcode, um die Fehlerfindung zu erleichtern
+\end{itemize}
+
+\subsection{Aufgabe 5 - Dokumentation}
+\begin{enumerate}[(a)]
+	\item Nachfolgend sind verschiedene Arten von Dokumentationen und dazu passende Programme aufgelistet.
+	\begin{itemize}
+		\item Anforderungsdokumentation
+		\begin{itemize}
+			\item Modern Requirements
+			\item Jama Software
+			\item Visur
+		\end{itemize}
+		\item Architekturdokumentation 
+		\begin{itemize}
+			\item UML (z.B. mittels des Tools Visual Paradigm)
+			\item Microsoft Visio
+			\item Omnigraffle
+		\end{itemize}
+		\item  Entwicklerdokumentation
+		\begin{itemize}
+			\item GitHub
+			\item Apiary
+			\item Read the Docs
+		\end{itemize}
+		\item Endnutzer-Dokumentation
+		\begin{itemize}
+			\item Whatfix
+			\item Bit.ai
+			\item ProProfs
+			\item Dropbox Paper
+		\end{itemize}
+	\end{itemize}
+	
+	\item Modellierung und UML helfen dabei, die Dokumentation zu strukturieren und in ihr keine Komponente der Software unerwähnt zu lassen, da sie einen Überblick darüber geben, welche Komponenten die Software ausmachen, in ihr enthalten sind und wie diese miteinander wechselwirken. Insbesondere Letzteres ist ein zentraler Bestandteil des Entwurfs der Softwarearchitektur bzw. -struktur, welche für alle beteiligten Personen wichtig ist, um die Software sauber entwickeln zu können.
+\end{enumerate}

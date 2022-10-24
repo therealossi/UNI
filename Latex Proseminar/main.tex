@@ -1,0 +1,38 @@
+\documentclass[fontsize=11pt, DIV=calc]{scrartcl} % Klasse der Bibliothek KOMAscript
+\usepackage[T1]{fontenc}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel} % typografische Regeln für die neue deutsche Rechtschreibung
+\usepackage{float}
+
+\usepackage{lmodern} % verändert die Schriftart
+\renewcommand*\familydefault{\sfdefault} % ändert die Schrift zu serifenloser Schrift
+
+\usepackage{geometry} % kann die Maße eines Dokumentes festlegen. Hier nur für Titelseite genutzt. Um alle anderen Maße kümmert sich KOMAscript!
+
+\usepackage{graphicx} % kann Bilder einfügen
+%\graphicspath{ {./} } % ist festzulegen falls verwendete Bilder in einem anderem Ordner sind, als diese Tex-Datei
+
+\usepackage{xcolor} % kann Textfarben festlegen
+
+
+\recalctypearea % berechnet den Satzspiegel neu. Muss am Ende der Präambel stehen. Neue Pakete bitte oberhalb dieser Zeile eintragen (dieser Befehl gehört zu KOMAscript bzw. dessen typearea-Paket)
+
+\setlength{\parindent}{0em}
+\topmargin -1.0cm
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\setlength{\textheight}{9.2in}
+\setlength{\textwidth}{6.0in}
+
+\hypersetup{
+	pdftitle={Seminar Softwaretechnik 1 – Gruppe 2},
+	pdfauthor={},
+	pdfborder={0 0 0}
+}
+
+
+\begin{document}
+    \input{seminar1.tex}
+\end{document}
